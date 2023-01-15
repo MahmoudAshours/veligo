@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+)
 
 func main() {
-    fmt.Println("Hello, World!")
+	setupRoutesAndHandlers()
+	http.ListenAndServe(":8080", nil)
 }
