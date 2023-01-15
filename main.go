@@ -6,5 +6,5 @@ import (
 
 func main() {
 	setupRoutesAndHandlers()
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":3000", nil)
 }
